@@ -283,10 +283,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -638,9 +634,6 @@ a[data-lightbox]:hover img {
     color: rgba(0, 0, 0, .5);
     background: none;
 }
-
-h1,
-h2,
 h3,
 h4,
 h5,
@@ -651,19 +644,30 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+}
+h1 {
+    font-family: "helvetica";
+    font-weight: 800;
+    font-size: 36px;
+    color:rgb(255, 197, 8)!important;
+    text-shadow: rgb(0, 0, 0) 2px 2px 20px;
+}
+h2 {
+    font-family: "helvetica";
+    font-weight: 800;
+    text-transform: uppercase;
+    color:#AD004B;
 }
 
+.subtitle {
+    font-family: "helvetica";
+    font-weight: 200;
+    font-size: 24px;
+    color:white;
+    line-height: 0;
+}
 .container {
     max-width: 1000px;
-}
-
-.hero-bloc-text {
-    font-size: 38px;
-}
-
-.hero-bloc-text-sub {
-    font-size: 36px;
 }
 
 .statement-bloc-text {
@@ -677,17 +681,12 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 .cta-hero {
@@ -721,11 +720,6 @@ h3 {
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
-
-h1 {
-    color: #333333!important;
-}
-
 h4 {
     color: #333333!important;
 }
@@ -771,15 +765,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #AD004B;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #AD004B;
     color: #FFFFFF!important;
 }
 
@@ -797,7 +791,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #AD004B!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -818,13 +812,30 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/banniere_la-chouette-agence.png");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
-
+.sectionsearch {
+    width:180px;
+    height: 50px;
+    border: 1px solid #AD004B;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    margin-left:15px;
+  }
+  .search {
+    width:140px;
+    border: none;
+    padding-left:20px;
+  }
+  #iconsearch {
+    color:#AD004B;
+  }
+ 
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
