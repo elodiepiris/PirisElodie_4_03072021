@@ -545,7 +545,6 @@ a[data-lightbox]:hover::before {
     position:absolute;
     top:50%;
     left:45%;
- 
 }
 .link {
     display:flex;
