@@ -38,16 +38,21 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence" height="40" /></a>
+				<a class="navbar-brand" aria-label="Revenir à l'accueil" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence" height="40" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-1">
+						<span class="sr-only">Toggle Navitation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+							class="icon-bar"></span>
+					</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					
 					<li>
-						<a href="#expertise" title="Découvrez nos domaines d'expertise, page actuelle" target="_blank" rel="noopener">Notre expertise</a>
+						<a href="#expertise" title="Découvrez nos domaines d'expertise, page actuelle">Notre expertise</a>
 					</li>
 					<li>
-						<a href="#realisations" title="Découvrez nos réalisations, page actuelle" target="_blank" rel="noopener">Nos réalisations</a>
+						<a href="#realisations" title="Découvrez nos réalisations, page actuelle">Nos réalisations</a>
 					</li>
 					<li>
 						<a href="contact.html" title="Contactez-nous" target="_blank" rel="noopener">Contact</a>
@@ -68,11 +73,11 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+<main class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="La chouette agence, agence web paris, création logo paris" />
+				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Logo - La chouette agence" />
 				<h1 class="text-center hero-bloc-text tc-white ">
 					<strong>LA CHOUETTE AGENCE</strong> <id class=subtitle><br>Spécialisée dans le web design <br>dans la région Rhônes-Alpes</id>
 					
@@ -80,7 +85,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</main>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
@@ -143,7 +148,7 @@
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
-				<h2 class="mg-md text-center tc-white">
+				<h2 class="text-center tc-white">
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 				</h2>
 				<p class="text-center white">
@@ -160,7 +165,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h2 id="realisations">Nos réalisations de sites web</h2>
+				<h2 id="realisations">Nos réalisations<br> de sites web</h2>
 				<p>Nos clients nous font confiance, découvrez quelques un de nos projets</p>
 			</div>
 		</div>
@@ -212,11 +217,11 @@
 <section class="texture-paper bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
-			<h2 class="mg-md text-center tc-white">
+			<h2 class="mg-md text-center tc-white col-sm-12">
 				Prêt pour redonner vie à votre projet ?
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contactez notre équipe !</a>
+				<a href="contact.html#Name" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contactez notre équipe !</a>
 			</div>
 		</div>
 	</div>
@@ -231,25 +236,44 @@
 				<p class="text-center white">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
+				<div class="link">
+					<div class="text-center">
+						<a aria-label="Conditions générales de vente de la chouette agence" href="https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Conditions-generales-de-vente" target="_blank" rel="noopener">Conditions générales de vente</a>
+					</div>
+					<div class="text-center">
+						<a aria-label="Mentions obligatoires de la chouette agence" href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228" target="_blank" rel="noopener">Mentions obligatoires</a>
+					</div>
+					<div class="text-center">
+						<a aria-label="Politique de confidentialité de la chouette agence" href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F24270" target="_blank" rel="noopener">Politique de confidentialité</a>
+					</div>
+				</div>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" aria-label="Retrouvez La chouette agence sur Twitter" href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener">
+								<span class="fa fa-twitter icon-md"></span>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" aria-label="Retrouvez La chouette agence sur Facebook" href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener">
+								<span class="fa fa-facebook icon-md"></span>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" title="Dribbble" target="_blank" rel="noopener"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" aria-label="Retrouvez La chouette agence sur Dribbble" href="https://dribbble.com/" title="Dribbble" target="_blank" rel="noopener">
+								<span class="fa fa-dribbble icon-md"></span>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noopener"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" aria-label="Retrouvez La chouette agence sur Instagram" href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noopener">
+								<span class="fa fa-instagram icon-md"></span>
+							</a>
 						</div>
 					</div>
 				</div>

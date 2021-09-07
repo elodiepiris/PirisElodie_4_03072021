@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .bloc-md {
@@ -432,8 +432,7 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .mg-lg {
@@ -538,16 +537,22 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    position:absolute;
+    top:50%;
+    left:45%;
+ 
+}
+.link {
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    margin-bottom:10px;
+    font-size:12px;
 }
 
 a[data-lightbox]:hover img {
@@ -564,12 +569,12 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog {
     width: 90%;
     max-width: 900px;
-    margin: 0 auto 0;
+    margin: 0;
 }
 
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .lightbox-caption {
@@ -577,8 +582,6 @@ a[data-lightbox]:hover img {
     color: #FFF;
     background: rgba(0, 0, 0, .5);
     position: absolute;
-    left: 15px;
-    right: 15px;
     bottom: 5px;
 }
 
@@ -627,6 +630,8 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .modal-body {
     padding-bottom: 45px;
+    display:flex;
+    justify-content: center;
 }
 
 .snapshot-lb .lightbox-caption {
@@ -691,9 +696,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -734,12 +737,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .avatar {
@@ -835,6 +833,12 @@ h4 {
   #iconsearch {
     color:#AD004B;
   }
+
+  input:invalid {
+    box-shadow: 0 0 3px 1px #AD004B;
+  }
+  
+ 
  
 @media (max-width: 1024px) {
     .bloc {
@@ -901,20 +905,38 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
+    .social {
+        padding: 10px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    blockquote {
+        font-size:13px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
     h1,
-    h2,
-    h3,
     h4,
     h5,
     h6,
-    p,
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    h3, p {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size:20px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -937,9 +959,8 @@ h4 {
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
-        padding-left: 15px;
+        padding: 10px;
         width: 100%;
     }
     .nav > li:hover {
@@ -975,6 +996,7 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+        
     }
     .nav-invert .navbar-header {
         float: none;
@@ -991,7 +1013,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1021,8 +1043,8 @@ h4 {
     .voffset-lg {
         margin-top: 30px;
     }
-    form {
-        padding: 5px;
+    .form-group {
+        padding: 5px 20px 0 20px;
     }
     .close-lightbox {
         display: inline-block;
@@ -1036,6 +1058,7 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+        
     }
 }
 

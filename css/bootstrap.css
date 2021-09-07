@@ -1406,13 +1406,15 @@ textarea {
 }
 
 a {
-    color: #337ab7;
-    text-decoration: none
+    color: white;
+    padding:0 20px;
+    text-decoration: none;
+    
 }
 
 a:focus,
 a:hover {
-    color: #23527c;
+    color: yellow;
     text-decoration: underline
 }
 
@@ -1435,9 +1437,10 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
+    margin-top:30px;
+
 }
 
 .img-rounded {
@@ -1658,7 +1661,8 @@ mark {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
+    padding:0;
 }
 
 .text-justify {
@@ -2064,6 +2068,8 @@ pre code {
 .col-xs-8,
 .col-xs-9 {
     position: relative;
+    display:block;
+    justify-content: center;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px
@@ -4162,7 +4168,6 @@ fieldset[disabled] .btn-danger:hover {
 
 .btn-link {
     font-weight: 400;
-    color: #337ab7;
     border-radius: 0
 }
 
@@ -4185,7 +4190,6 @@ fieldset[disabled] .btn-link {
 
 .btn-link:focus,
 .btn-link:hover {
-    color: #23527c;
     text-decoration: underline;
     background-color: transparent
 }
@@ -4223,8 +4227,10 @@ fieldset[disabled] .btn-link:hover {
 }
 
 .btn-block {
-    display: block;
-    width: 100%
+    display: flex;
+    justify-content: center;
+    margin:10px!important;
+    width: calc(100% - 20px);
 }
 
 .btn-block+.btn-block {
@@ -7682,7 +7688,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
